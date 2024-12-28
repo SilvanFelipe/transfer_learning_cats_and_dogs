@@ -22,9 +22,6 @@ Este projeto utiliza Transfer Learning com o modelo pré-treinado VGG16 para rea
   1. Treinamento inicial com as camadas do VGG16 congeladas.
   2. Fine-tuning com as camadas descongeladas para ajustes finais.
 
-### 5. **Salvamento e Carregamento do Modelo**
-- O modelo treinado é salvo em um arquivo `.h5` para reutilização futura.
-
 ---
 
 ## Como Usar
@@ -44,16 +41,6 @@ Este projeto utiliza Transfer Learning com o modelo pré-treinado VGG16 para rea
 2. Execute as células na ordem para:
    - Baixar e preparar o dataset.
    - Treinar o modelo.
-   - Salvar o modelo no arquivo `cats_dogs_model.h5`.
-
-### Avaliação do Modelo
-
-Para carregar o modelo salvo e avaliar novas imagens, adicione as seguintes células ao notebook:
-```python
-from tensorflow.keras.models import load_model
-model = load_model("cats_dogs_model.h5")
-# Avaliação de novas imagens...
-```
 
 ---
 
